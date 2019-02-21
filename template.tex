@@ -1,0 +1,94 @@
+% This is the Working Version (master branch)
+\pdfminorversion=4
+
+\documentclass[preprint,pre,showkeys,12pt,superscriptaddress,nofootinbib]{revtex4-1}
+% \documentclass[superscriptaddress,twocolumn,10pt]{revtex4-1}
+
+% Standard Packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}   % use for hypertext links, including those to external documents and URLs
+\usepackage{epstopdf}
+\usepackage{xspace}
+\usepackage{grffile}
+\usepackage{xr}
+\usepackage{lipsum}
+
+%Other packages I use occasionally
+%\usepackage{verbatim}   % useful for program listings
+%\usepackage{color}      % use if color is used in text
+%\usepackage{subfigure}  % use for side-by-side figures
+%\usepackage{amsthm}
+
+\raggedbottom           % don't add extra vertical space
+
+% Macros for editing/commenting
+\newcommand{\revision}[1]{\textbf{#1}}
+\newcommand{\previous}[1]{\textit{#1}}
+\newcommand{\AArm}{\ensuremath{\textrm{\AA}}\xspace}
+\newcommand{\CMT}[2]{\textcolor{red}{\textbf{\textit{#1: #2}}}}
+\newcommand{\REFs}[1]{\noindent\textbf{[INS. REFs #1]}}
+
+% Macros for often-used symbols/functions
+\def\s*{{^{\ast}}}
+\def\deg{{^{\circ}}}
+\def\lnPi{{\ln \Pi}}
+\def\macroS{{\mathbf{S}}}
+\def\macroT{{\mathbf{T}}}
+\def\methane{CH\ensuremath{_4}\xspace}
+\def\CD4{CD\ensuremath{_4}\xspace}
+\def\Tstar{\ensuremath{k_{\rm B} T/\epsilon}\xspace}
+\def\kB{\ensuremath{k_{\rm B}}\xspace}
+\newcommand{\ave}[1]{\left<#1\right>}
+\newcommand{\vect}[1]{\mathbf{#1}}
+\newcommand{\super}[1]{\ensuremath{^{\text{#1}}}}
+\newcommand{\sub}[1]{\ensuremath{_{\text{#1}}}}
+
+% External document(s) for referencing
+%\externaldocument[SI-]{SI_template}
+
+% Path for Graphics
+\graphicspath{{Figures/}}
+
+\begin{document}
+
+\title{This is the title\footnote{Official contribution of the National Institute of Standards and Technology; not subject to copyright in the United States.}} 
+
+%Nonideal contributions to the isosteric heat of adsorption; consistency of molecular and macroscopic expressions thereof
+
+\author{Daniel W. Siderius}\email[Corresponding author, email: ]{daniel.siderius@nist.gov}
+\affiliation{Chemical Sciences Division, National Institute of Standards and Technology, Gaithersburg, MD 20899, USA}
+
+\keywords{some here}
+\pacs{enter PACS codes here}
+
+\date{\today}
+%\date{Received: XX / Accepted: XX / Published Online: XX}
+
+\begin{abstract}
+Abstract here
+\end{abstract}
+
+\maketitle
+
+\newpage
+\section{Introduction}\label{sec:intro}
+\lipsum[1]
+
+
+Citation to CODATA 2017 adjustment\cite{Newell_CODATA_2017}
+
+\section{Section 2}
+\lipsum[2-3]
+
+\appendix
+\section{An Appendix}
+
+
+\bibliography{bibtex/DWS_jabref}
+\bibliographystyle{apsrev}
+%\input{bib.bbl}
+
+\end{document}
