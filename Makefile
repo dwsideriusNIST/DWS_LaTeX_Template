@@ -7,7 +7,7 @@ VIEWER=xpdf
 LATEXMK=latexmk
 LATEXMKOPT=-pdf
 
-MAIN=Qst_single
+MAIN=template
 SOURCES=$(MAIN).tex Makefile
 FIGURES := $(shell find Figures/* -type f) #Forces an update if anything in ./Figures is newer than $(MAIN).pdf
 
